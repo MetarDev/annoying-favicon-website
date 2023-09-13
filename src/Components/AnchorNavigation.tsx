@@ -16,6 +16,7 @@ export const AnchorNavigation = ({ base = "/docs" }: { base?: string }) => {
       justifySelf={"flex-start"}
       alignSelf={"flex-start"}
       top={16}
+			display={{ base: "none", md: "block" }}
     >
       <Heading as="h2" size="sm" marginBottom={4}>
         On this page:
