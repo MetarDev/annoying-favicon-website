@@ -18,15 +18,18 @@ import {
 } from "@chakra-ui/react";
 import { CodeBlock } from "./CodeBlock";
 import { CodeBlocks, PropsType } from "@/Interfaces/Doc";
+import { anchorFromTitle } from "@/Helpers/anchor";
 
 
 
 export const Feature = ({
+	functionName,
   title,
   description,
   props = [],
   codeBlocks,
 }: {
+	functionName: string;
   title: string;
   description: string | React.ReactNode;
   props?: PropsType[];
@@ -34,7 +37,7 @@ export const Feature = ({
 }) => {
   return (
     <VStack spacing={6} alignItems={"flex-start"}>
-      <Heading as="h3" size="md" id="swapFavicon" marginTop={12}>
+      <Heading as="h3" size="md" id={anchorFromTitle(functionName)} marginTop={12}>
         <Code colorScheme="green">{title}</Code>
       </Heading>
       <Text>{description}</Text>

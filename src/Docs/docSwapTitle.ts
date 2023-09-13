@@ -29,6 +29,7 @@ swapTitle({
 
 export const docSwapTitle: Doc = {
 	title: "swapTitle(props: Object)",
+	functionName: "swapTitle",
 	description: 'Replace the current title with a new one. By using the "when" options prop, you can make it run only once or on blur / focus events (always). Resetting will reset the title to the original value before any tampering.',
 	props: [
 		{
@@ -54,7 +55,7 @@ export const docSwapTitle: Doc = {
 	],
 	codeBlocks: [
 		{
-			title: "Swap title",
+			title: "Swap title now",
 			codeString: exampleSwapTitle,
 			onReset: () => resetTitle(),
 			onRun: () => swapTitle({ title: 'New page title'}),

@@ -11,6 +11,7 @@ marqueeTitle({
 
 export const docMarqueeTitle: Doc = {
 	title: "marqueeTitle(props: Object)",
+	functionName: "marqueeTitle",
 	description: 'Marquee effect on the document title. Not really optimised. Built for fun, usage not recommended.',
 	props: [
 		{
@@ -26,10 +27,9 @@ export const docMarqueeTitle: Doc = {
 	],
 	codeBlocks: [
 		{
-			title: "Marquee title",
 			codeString: exampleMarqueeTitle,
 			onReset: () => resetTitle(),
-			onRun: () => marqueeTitle({ title: 'BREAKING NEWS! This is a marquee title!', interval: 500}),
+			onRun: () => marqueeTitle({ title: 'BREAKING NEWS! This is a marquee title!', interval: 250}),
 		},
 	],
 }

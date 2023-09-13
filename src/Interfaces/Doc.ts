@@ -5,13 +5,14 @@ export interface PropsType {
 }
 
 export interface CodeBlocks {
-	title: string;
+	title?: string;
   codeString: string;
   onReset: () => void;
   onRun: () => void;
 }
 
 export interface Doc {
+	functionName: string;
 	title: string;
 	description: string;
 	props?: PropsType[];

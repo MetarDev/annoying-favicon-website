@@ -4,9 +4,10 @@ import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
 import bash from "react-syntax-highlighter/dist/esm/languages/hljs/bash";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { useEffect } from "react";
+import { isValidElement, useEffect } from "react";
 import CopyToClipboard from "./CopyToClipboard";
 import { Box, Button, Flex, Heading } from "@chakra-ui/react";
+import { anchorFromTitle } from "@/Helpers/anchor";
 
 export const CodeBlock = ({
   title = "",
@@ -57,7 +58,13 @@ export const CodeBlock = ({
   return (
     <Box position={"relative"} alignSelf={"flex-start"} width={"full"}>
       {title && (
-        <Heading as="h4" size="sm" marginBottom={6} marginTop={2}>
+        <Heading
+          as="h3"
+          size="sm"
+          marginBottom={6}
+          marginTop={2}
+          id={anchorFromTitle(title)}
+        >
           {title}
         </Heading>
       )}

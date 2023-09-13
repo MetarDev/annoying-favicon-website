@@ -29,6 +29,7 @@ swapFavicon({
 
 export const docSwapFavicon: Doc = {
 	title: "swapFavicon(props: Object)",
+	functionName: "swapFavicon",
 	description: 'Replace the current favicon with a new one. By using the "when" options prop, you can make it run only once or on blur / focus events (always). Resetting will reset the favicon to the original value before any tampering.',
 	props: [
 		{

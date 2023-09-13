@@ -8,6 +8,7 @@ export const Examples = ({}: {}) => {
     <>
       {functionDocs.map(({
 				title,
+				functionName,
 				description,
 				props,
 				codeBlocks,
@@ -15,6 +16,7 @@ export const Examples = ({}: {}) => {
         <Feature
 					key={title}
           title={title}
+					functionName={functionName}
           description={description}
           props={props}
           codeBlocks={codeBlocks}

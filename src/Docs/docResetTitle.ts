@@ -9,10 +9,10 @@ resetTitle();
 
 export const docResetTitle: Doc = {
 	title: "resetTitle",
+	functionName: "resetTitle",
 	description: 'Resets the title, undoing any other swapping or messing with the title done by this library.',
 	codeBlocks: [
 		{
-			title: "Reset title",
 			codeString: exampleResetTitle,
 			onReset: () => resetTitle(),
 			onRun: () => resetTitle(),

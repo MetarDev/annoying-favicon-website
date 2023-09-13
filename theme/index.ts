@@ -124,6 +124,10 @@ const theme = {
         _dark: "gray.100",
       },
       brandTextLight: {
+        default: "gray.700",
+        _dark: "gray.300",
+      },
+      brandTextLighter: {
         default: "gray.600",
         _dark: "gray.400",
       },
