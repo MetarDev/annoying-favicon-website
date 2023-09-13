@@ -18,8 +18,8 @@ export default function Homepage() {
       <PageHeader title={"Docs"} />
       <VStack spacing={4} alignItems={"flex-start"} marginTop={8}>
         <Heading as="h2">Installation</Heading>
-				<Text>To install annoying-favicon, run the following command in your terminal.</Text>
-				<CodeBlock code="npm install annoying-favicon" language="bash" hasCopyButton={false} />
+				<Text>To install tab-goes-brrr, run the following command in your terminal.</Text>
+				<CodeBlock code="npm install tab-goes-brrr" language="bash" hasCopyButton={false} />
 				<Heading as="h2" marginTop={16}>API</Heading>
         <Flex alignItems={"center"} gap={8}>
           <Box flex={1}>

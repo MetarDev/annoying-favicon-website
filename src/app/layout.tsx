@@ -6,8 +6,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "AnnoyingFavicon.js",
-	description: "A documentation website for annoying-favicon library",
+	title: "TabGoesBrrr.js",
+	description: "A documentation website for tab-goes-brrr library",
 };
 
 export default function RootLayout({

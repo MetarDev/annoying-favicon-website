@@ -11,9 +11,9 @@ export const AppMenu = () => {
   return (
     <Flex alignItems={"center"} gap={1}>
       <ChakraLink as={Link} href="/docs">Docs</ChakraLink>
-      <ChakraLink href="https://github.com/MetarDev/annoying-favicon" isExternal>
+      <ChakraLink href="https://github.com/MetarDev/tab-goes-brrr" isExternal>
         <IconButton
-          aria-label="View annoying-favicon.js on github"
+          aria-label="View tab-goes-brrr.js on github"
           variant={"ghost"}
           colorScheme="gray"
           icon={<FaGithub size={faIconSize} />}

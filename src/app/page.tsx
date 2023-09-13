@@ -9,9 +9,9 @@ import { PageHeader } from "@/Components/Global/PageHeader";
 export default function Homepage() {
   return (
     <DefaultLayout justifyContent="center">
-      <PageHeader title={"Annoying Favicon"} hasDivider={false}>
+      <PageHeader title={"Tab Goes BRRR"} hasDivider={false}>
         <Text maxW="xl">
-          A JS library for manipulating the favicon / title of a webpage.
+          A JS library for programmatically manipulating your website's browser tab (favicon / title).
         </Text>
 
         <Flex gap={2}>
@@ -20,7 +20,7 @@ export default function Homepage() {
           </Button>
           <Button
             as={Link}
-            href="https://github.com/MetarDev/annoying-favicon"
+            href="https://github.com/MetarDev/tab-goes-brrr"
             variant={"outline"}
           >
             <Icon as={FaGithub} marginRight={2} />

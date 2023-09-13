@@ -24,12 +24,12 @@ import { CodeBlocks, PropsType } from "@/Interfaces/Doc";
 export const Feature = ({
   title,
   description,
-  props,
+  props = [],
   codeBlocks,
 }: {
   title: string;
   description: string | React.ReactNode;
-  props: PropsType[];
+  props?: PropsType[];
   codeBlocks: CodeBlocks[];
 }) => {
   return (
