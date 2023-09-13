@@ -150,6 +150,7 @@ const theme = {
       body_height: `calc(100vh - ${2 * 72}px - 2*var(--chakra-space-8))`, // 100vh - header - footer
       body_height_lg: `calc(100vh - ${2 * 72}px - 2*var(--chakra-space-16))`, // 100vh - header - footer.
 			"1/3": "33.333333%",
+			"1/4": "25%",
     },
     space: {
       content_vertical_spacing: 8,

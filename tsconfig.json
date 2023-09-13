@@ -25,6 +25,7 @@
 			"@/Layouts/*": ["./src/Layouts/*"],
 			"@/Helpers/*": ["./src/Helpers/*"],
 			"@/Hooks/*": ["./src/Hooks/*"],
+			"@/Docs/*": ["./src/Docs/*"], 
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

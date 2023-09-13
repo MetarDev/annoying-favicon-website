@@ -1,33 +1,33 @@
 "use client";
 import {
   Box,
-  Button,
-  Code,
-  Divider,
   Flex,
   Heading,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import DefaultLayout from "@/Layouts/DefaultLayout";
-import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
-import { Icon } from "@chakra-ui/icons";
 import { Examples } from "@/Components/Examples";
 import { AnchorNavigation } from "@/Components/AnchorNavigation";
-import { Demo } from "@/Components/Demo";
 import { PageHeader } from "@/Components/Global/PageHeader";
+import { CodeBlock } from "@/Components/CodeBlock";
 
 export default function Homepage() {
   return (
     <DefaultLayout justifyContent="center">
-			<PageHeader title={"Docs"} />
-      <Flex alignItems={"center"} marginTop={16} gap={8}>
-        <Box flex={1}>
-          <Examples />
-        </Box>
-        <AnchorNavigation />
-      </Flex>
+      <PageHeader title={"Docs"} />
+      <VStack spacing={4} alignItems={"flex-start"} marginTop={8}>
+        <Heading as="h2">Installation</Heading>
+				<Text>To install annoying-favicon, run the following command in your terminal.</Text>
+				<CodeBlock code="npm install annoying-favicon" language="bash" hasCopyButton={false} />
+				<Heading as="h2" marginTop={16}>API</Heading>
+        <Flex alignItems={"center"} gap={8}>
+          <Box flex={1}>
+            <Examples />
+          </Box>
+          <AnchorNavigation />
+        </Flex>
+      </VStack>
     </DefaultLayout>
   );
 }
