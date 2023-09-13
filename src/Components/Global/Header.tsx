@@ -6,8 +6,6 @@ import { AppMenu } from "./AppMenu";
 import Link from "next/link";
 
 export const Header = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   return (
     <header>
       <Container

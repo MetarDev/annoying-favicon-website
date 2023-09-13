@@ -1,17 +1,10 @@
 "use client";
 import React from "react";
-import { getIconSize } from "@/Helpers/icons";
-import { ColorModeSwitcher } from "../ColorModeSwitcher";
 import {
-  Box,
   Divider,
-  Flex,
   Heading,
-  IconButton,
-  Link,
   VStack,
 } from "@chakra-ui/react";
-import { FaGithub } from "react-icons/fa";
 
 export const PageHeader = ({
   children = null,
