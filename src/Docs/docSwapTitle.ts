@@ -1,5 +1,5 @@
 import { Doc } from "@/Interfaces/Doc";
-import { swapTitle, resetTitle } from "annoying-favicon";
+import { swapTitle, resetTitle } from "tab-goes-brrr";
 
 const exampleSwapTitle = `import { swapTitle } from 'annoying-title';
 
