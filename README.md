@@ -1,2 +1,2 @@
-# annoying-favicon-website
-Website for the annoying-favicon package.
+# tab-goes-brrr-website
+Website for the tab-goes-brrr package.

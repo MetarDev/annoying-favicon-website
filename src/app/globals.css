@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+[data-theme=light] body {
+	--chakra-colors-chakra-body-bg: var(--chakra-colors-gray-200);
+}
+
+[data-theme=light] header,
+[data-theme=light] footer {
+	background: var(--chakra-colors-gray-200);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
