@@ -14,6 +14,6 @@ export interface CodeBlocks {
 export interface Doc {
 	title: string;
 	description: string;
-	props: PropsType[];
+	props?: PropsType[];
 	codeBlocks: CodeBlocks[];
 }
