@@ -11,7 +11,7 @@ export default function Homepage() {
     <DefaultLayout justifyContent="center">
       <PageHeader title={"😸 Tabky.js"} hasDivider={false}>
         <Text maxW="xl">
-          A JS library for programmatically manipulating your website's browser tab (favicon / title).
+          {"A JS library for programmatically manipulating your website's browser tab (favicon / title)."}
         </Text>
 
         <Flex gap={2}>

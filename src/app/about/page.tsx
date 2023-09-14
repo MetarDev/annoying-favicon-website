@@ -26,14 +26,14 @@ export default function Homepage() {
         paddingTop={16}
       >
         <Text>
-          Tabsy.js is a library for allowing you to manipulate your browser's
+          Tabsy.js is a library for allowing you to manipulate your {"browser's"}
           tab content (favicon and title) with a similar API / functionality for
           both favicons and titles.
         </Text>
         <Text>
           It allows you to build micro-interactions (dynamically and / or
           temporarily change your favicon / title depending on what action user
-          takes on the page), show your app's status in favicon (with badges /
+          takes on the page), show your {"app's"} status in favicon (with badges /
           notification markers), change favicon / title when user goes to a
           different tab and more.
         </Text>
