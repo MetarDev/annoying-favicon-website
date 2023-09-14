@@ -1,6 +1,6 @@
 "use client";
 
-import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismAsyncLight as SyntaxHighlighter, SyntaxHighlighterProps } from "react-syntax-highlighter";
 import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
 import bash from "react-syntax-highlighter/dist/esm/languages/hljs/bash";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -45,14 +45,15 @@ export const CodeBlock = ({
 
   const hasAnyButton = hasCopyButton || hasRunButton || hasResetButton;
 
-  let syntaxHighlighterProps: Object = {};
+  let syntaxHighlighterProps: SyntaxHighlighterProps = {
+		children: code,
+		customStyle: {
+			overflowX: "hidden",
+		}
+	};
 
-  if (hasAnyButton) {
-    syntaxHighlighterProps = {
-      customStyle: {
-        paddingBottom: "3rem",
-      },
-    };
+  if (hasAnyButton && syntaxHighlighterProps.customStyle) {
+    syntaxHighlighterProps.customStyle.paddingBottom = "3rem";
   }
 
   return (
@@ -69,6 +70,7 @@ export const CodeBlock = ({
         </Heading>
       )}
       <SyntaxHighlighter
+        wrapLongLines={true}
         language={language}
         style={vscDarkPlus}
         {...syntaxHighlighterProps}
