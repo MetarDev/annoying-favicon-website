@@ -15,7 +15,6 @@ export const Footer = () => {
 					lg: "content_horizontal_spacing_lg",
 				}}
 			>
-				This is footer
 			</Container>
 		</footer>
 	);
