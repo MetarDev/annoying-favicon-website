@@ -1,7 +1,7 @@
 import { Doc } from "@/Interfaces/Doc";
-import { resetFavicon } from "tab-goes-brrr";
+import { resetFavicon } from "tabky-js";
 
-const exampleResetFavicon = `import { resetFavicon } from 'tab-goes-brrr';
+const exampleResetFavicon = `import { resetFavicon } from 'tabky-js';
 
 // Resets favicon to original value (before tampering)
 resetFavicon();

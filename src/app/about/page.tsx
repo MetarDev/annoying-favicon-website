@@ -70,7 +70,7 @@ export default function Homepage() {
             <Text>
               For all library-specific issues please open an issue on{" "}
               <Link
-                href="https://github.com/MetarDev/tab-goes-brrr/issues"
+                href="https://github.com/MetarDev/tabky-js/issues"
                 isExternal
               >
                 {"library's github"}
@@ -81,7 +81,7 @@ export default function Homepage() {
             <Text>
               For all website-specific issues please open an issue on{" "}
               <Link
-                href="https://github.com/MetarDev/tab-goes-brrr-website/issues"
+                href="https://github.com/MetarDev/tabky-js-website/issues"
                 isExternal
               >
                 {"website's github"}

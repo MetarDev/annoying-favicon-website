@@ -44,9 +44,7 @@ export const Header = () => {
           alignItems={"center"}
         >
           <Box>
-            <Link href="/">
-              <Logo />
-            </Link>
+            <Logo />
           </Box>
           <HStack
             spacing={4}
@@ -61,12 +59,9 @@ export const Header = () => {
             </ChakraLink>
           </HStack>
           <HStack spacing={2} justifySelf={"flex-end"}>
-            <ChakraLink
-              href="https://github.com/MetarDev/tab-goes-brrr"
-              isExternal
-            >
+            <ChakraLink href="https://github.com/MetarDev/tabky-js" isExternal>
               <IconButton
-                aria-label="View tab-goes-brrr.js on github"
+                aria-label="View tabky-js.js on github"
                 variant={"ghost"}
                 colorScheme="gray"
                 icon={<FaGithub size={faIconSize} />}

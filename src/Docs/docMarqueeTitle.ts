@@ -1,5 +1,5 @@
 import { Doc } from "@/Interfaces/Doc";
-import { marqueeTitle, resetTitle } from "tab-goes-brrr";
+import { marqueeTitle, resetTitle } from "tabky-js";
 
 const exampleMarqueeTitle = `import { marqueeTitle } from 'annoying-title';
 

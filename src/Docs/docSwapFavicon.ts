@@ -1,14 +1,14 @@
 import { Doc } from "@/Interfaces/Doc";
-import { swapFavicon, resetFavicon } from "tab-goes-brrr";
+import { swapFavicon, resetFavicon } from "tabky-js";
 
-const exampleSwapFavicon = `import { swapFavicon } from 'tab-goes-brrr';
+const exampleSwapFavicon = `import { swapFavicon } from 'tabky-js';
 
 swapFavicon({
 	favicon: '🎉', // favicon or img URL
 });
 `; 
 
-const exampleSwapFaviconOnBlurResetOnFocus = `import { swapFavicon } from 'tab-goes-brrr';
+const exampleSwapFaviconOnBlurResetOnFocus = `import { swapFavicon } from 'tabky-js';
 
 swapFavicon({
 	favicon: '👋',
@@ -17,7 +17,7 @@ swapFavicon({
 });
 `; 
 
-const exampleSwapFaviconResetAfter = `import { swapFavicon } from 'tab-goes-brrr';
+const exampleSwapFaviconResetAfter = `import { swapFavicon } from 'tabky-js';
 
 swapFavicon({
 	favicon: '⏳',

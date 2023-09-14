@@ -9,7 +9,7 @@ import { PageHeader } from "@/Components/Global/PageHeader";
 export default function Homepage() {
   return (
     <DefaultLayout justifyContent="center">
-      <PageHeader title={"Tab Goes BRRR"} hasDivider={false}>
+      <PageHeader title={"😸 Tabky.js"} hasDivider={false}>
         <Text maxW="xl">
           A JS library for programmatically manipulating your website's browser tab (favicon / title).
         </Text>
@@ -20,7 +20,7 @@ export default function Homepage() {
           </Button>
           <Button
             as={Link}
-            href="https://github.com/MetarDev/tab-goes-brrr"
+            href="https://github.com/MetarDev/tabky-js"
             variant={"outline"}
           >
             <Icon as={FaGithub} marginRight={2} />
