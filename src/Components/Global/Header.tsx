@@ -2,9 +2,6 @@
 import React from "react";
 import {
   Container,
-  Flex,
-  Text,
-  useColorMode,
   Link as ChakraLink,
   IconButton,
   Box,
@@ -12,7 +9,6 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 import { Logo } from "./Logo";
-import { AppMenu } from "./AppMenu";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { getIconSize } from "@/Helpers/icons";
