@@ -6,8 +6,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "TabGoesBrrr.js",
-	description: "A documentation website for tab-goes-brrr library",
+	title: "Tabky.js",
+	description: "A documentation website for tabky-js library",
 };
 
 export default function RootLayout({

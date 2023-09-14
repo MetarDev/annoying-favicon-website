@@ -1,5 +1,5 @@
 import { Doc } from "@/Interfaces/Doc";
-import { swapTitle, resetTitle } from "tab-goes-brrr";
+import { swapTitle, resetTitle } from "tabky-js";
 
 const exampleSwapTitle = `import { swapTitle } from 'annoying-title';
 

@@ -1,2 +1,2 @@
-# tab-goes-brrr-website
-Website for the tab-goes-brrr package.
+# tabky-js-website
+Website for the tabky-js package.

@@ -1,5 +1,5 @@
 import { Doc } from "@/Interfaces/Doc";
-import { resetTitle } from "tab-goes-brrr";
+import { resetTitle } from "tabky-js";
 
 const exampleResetTitle = `import { resetTitle } from 'annoying-title';
 

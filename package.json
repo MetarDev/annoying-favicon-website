@@ -1,5 +1,5 @@
 {
-  "name": "tab-goes-brrr-website",
+  "name": "tabky-js-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -27,10 +27,12 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.11.0",
     "react-syntax-highlighter": "^15.5.0",
-    "tab-goes-brrr": "file:../tab-goes-brrr",
+    "tabky-js": "^0.1.0",
     "typescript": "5.1.3"
   },
   "devDependencies": {
-    "@types/lodash.kebabcase": "^4.1.7"
+    "@types/lodash.kebabcase": "^4.1.7",
+    "@types/react-syntax-highlighter": "^15.5.7",
+    "prettier": "3.0.3"
   }
 }
