@@ -39,13 +39,13 @@ export const docSwapTitle: Doc = {
 		},
 		{
 			name: "when",
-			type: "string",
-			description: 'Default "now". When to swap the title. Available options are "now" "onfocus" "onblur"',
+			type: '"now" | "onfocus" | "onblur"',
+			description: 'Default "now". When to swap the title.',
 		},
 		{
 			name: "reset",
-			type: "string",
-			description: 'Reset the title if needed. Available options are "none" "after" "onfocus" "onblur"',
+			type: '"none" | "after" | "onfocus" | "onblur"',
+			description: 'Reset the title if needed to the original document title before any tampering.',
 		},
 		{
 			name: "resetAfterMs",

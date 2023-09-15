@@ -8,6 +8,14 @@ swapFavicon({
 });
 `; 
 
+const exampleSwapFaviconWithoutCompatibilityMode = `import { swapFavicon } from 'tabky-js';
+
+swapFavicon({
+	favicon: '🎉', // favicon or img URL,
+	emojiCompatibilityMode: false, // this will draw the emoji as SVG instead of using the canvas.
+});
+`; 
+
 const exampleSwapFaviconOnBlurResetOnFocus = `import { swapFavicon } from 'tabky-js';
 
 swapFavicon({
@@ -39,26 +47,32 @@ export const docSwapFavicon: Doc = {
 		},
 		{
 			name: "when",
-			type: "string",
-			description: 'Default "now". When to swap the favicon. Available options are "now" "onfocus" "onblur"',
+			type: '"now" | "onfocus" | "onblur"',
+			description: 'Default "now". When to swap the favicon.',
 		},
 		{
 			name: "reset",
-			type: "string",
-			description: 'Reset the favicon if needed. Available options are "none" "after" "onfocus" "onblur"',
+			type: '"none" | "after" | "onfocus" | "onblur"',
+			description: 'Reset the favicon if needed to the original favicon before any tampering.',
 		},
 		{
 			name: "resetAfterMs",
 			type: "number",
-			description: 'Used only with reset: "after" - The number of milliseconds to wait before resetting the favicon.',
+			description: 'The number of milliseconds to wait before resetting the favicon. Only used with reset: "after"',
 		},
 	],
 	codeBlocks: [
 		{
-			title: "Swap favicon to emoji",
+			title: "Swap favicon to emoji, draw as PNG",
 			codeString: exampleSwapFavicon,
 			onReset: () => resetFavicon(),
 			onRun: () => swapFavicon({ favicon: '🎉'}),
+		},
+		{
+			title: "Swap favicon to emoji, draw as SVG",
+			codeString: exampleSwapFaviconWithoutCompatibilityMode,
+			onReset: () => resetFavicon(),
+			onRun: () => swapFavicon({ favicon: '🎉', emojiCompatibilityMode: false }),
 		},
 		{
 			title: "Swap favicon to emoji, reset after 3 seconds",
