@@ -15,6 +15,7 @@ export default function CopyToClipboard({
       disabled={hasCopied}
       size={"sm"}
       onClick={onCopy}
+			variant={"ghost"}
     >
       {hasCopied ? "Copied!" : "Copy"}
     </Button>

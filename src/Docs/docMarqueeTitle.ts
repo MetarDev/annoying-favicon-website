@@ -4,13 +4,13 @@ import { marqueeTitle, resetTitle } from "tabky-js";
 const exampleMarqueeTitle = `import { marqueeTitle } from 'annoying-title';
 
 marqueeTitle({
-	title: 'BREAKING NEWS! This is a marquee title!',
-	interval: 300,
+  title: 'BREAKING NEWS! This is a marquee title!',
+  interval: 300,
 });
 `;
 
 export const docMarqueeTitle: Doc = {
-	title: "marqueeTitle(props: Object)",
+	title: "marqueeTitle(props: Object): Interval",
 	functionName: "marqueeTitle",
 	description: 'Marquee effect on the document title. Not really optimised. Built for fun, usage not recommended.',
 	props: [
