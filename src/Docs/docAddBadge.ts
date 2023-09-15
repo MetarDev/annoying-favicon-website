@@ -36,7 +36,7 @@ addBadge({
 const exampleAddBadgeCustomPosition = `import { addBadge } from 'tabky-js';
 
 addBadge({
-	type: 'dot',
+  type: 'dot',
   position: 'bottom-right',
 });
 `;
@@ -51,21 +51,22 @@ addBadge({
 `;
 
 export const docAddBadge: Doc = {
-  title: "addBadge(props: Object)",
+  title: "addBadge(props: Object): void",
   functionName: "addBadge",
   description:
     'Adds a badge to the current favicon. This can be used to add "you have a notification" type effect to your favicon or to indicate some other state to the user. Currently resets the favicon when called so you can only add badges to the original favicon.',
   props: [
     // position = "top-right",
     {
-			name: "type",
-			type: '"dot" | "count"',
-			description: 'Type of badge.',
-		},
+      name: "type",
+      type: '"dot" | "count"',
+      description: "Type of badge.",
+    },
     {
       name: "count",
       type: "number",
-      description: 'Default: null. Count to display on the badge. Only used if type: "count".',
+      description:
+        'Default: null. Count to display on the badge. Only used if type: "count".',
     },
     {
       name: "size",
@@ -80,23 +81,27 @@ export const docAddBadge: Doc = {
     {
       name: "font",
       type: "string",
-      description: 'Default: "sans-serif". Override font used for the count. Only used if type: "count".',
+      description:
+        'Default: "sans-serif". Override font used for the count. Only used if type: "count".',
     },
     {
       name: "dotColor",
       type: "Color",
-      description: 'Default: "#ff0000". Color of the badge dot. Accepts any valid CSS color.',
+      description:
+        'Default: "#ff0000". Color of the badge dot. Accepts any valid CSS color.',
     },
     {
       name: "innerDotColor",
       type: "Color",
-      description: 'Default: "#fff". Color of the inner badge dot. Accepts any valid CSS color. Set to same as dotColor to remove inner dot. Only used if type: "dot".',
+      description:
+        'Default: "#fff". Color of the inner badge dot. Accepts any valid CSS color. Set to same as dotColor to remove inner dot. Only used if type: "dot".',
     },
     {
       name: "countColor",
       type: "Color",
-      description: 'Default: "#fff". Color of the count / number in badge. Only used if type: "count".',
-    }
+      description:
+        'Default: "#fff". Color of the count / number in badge. Only used if type: "count".',
+    },
   ],
   codeBlocks: [
     // exampleAddBadgeCustomPosition
