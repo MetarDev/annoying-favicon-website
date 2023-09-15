@@ -85,7 +85,7 @@ export const CodeBlock = ({
           </Button>
         )}
         {hasResetButton && (
-          <Button size={"sm"} variant={"ghost"} onClick={onReset}>
+          <Button size={"sm"} variant={"outline"} onClick={onReset}>
             Reset
           </Button>
         )}
