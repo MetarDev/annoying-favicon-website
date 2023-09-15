@@ -80,12 +80,12 @@ export const CodeBlock = ({
       <Flex position={"absolute"} bottom={4} right={4} gap={4}>
         {hasCopyButton && <CopyToClipboard toCopy={code} />}
         {hasRunButton && (
-          <Button size={"sm"} colorScheme={"green"} onClick={onRun}>
+          <Button size={"sm"} onClick={onRun}>
             Run
           </Button>
         )}
         {hasResetButton && (
-          <Button size={"sm"} colorScheme={"red"} onClick={onReset}>
+          <Button size={"sm"} variant={"ghost"} onClick={onReset}>
             Reset
           </Button>
         )}
