@@ -136,16 +136,16 @@ const theme = {
         _dark: "yellow.300",
       },
       brandTextRed: {
-        default: "green.700",
-        _dark: "green.300",
+        default: "yellow.700",
+        _dark: "yellow.300",
       },
       primaryLink: {
-        default: "green.700",
-        _dark: "green.300",
+        default: "yellow.700",
+        _dark: "yellow.300",
       },
       primaryLinkHover: {
-        default: "green.600",
-        _dark: "green.200",
+        default: "yellow.600",
+        _dark: "yellow.200",
       }
     },
     sizes: {
@@ -170,7 +170,7 @@ const theme = {
 
 export default extendTheme(
   withDefaultColorScheme({
-    colorScheme: "green",
+    colorScheme: "yellow",
     components: [
       "Button",
       "IconButton",

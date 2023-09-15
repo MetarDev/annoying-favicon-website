@@ -38,7 +38,7 @@ export const Feature = ({
   return (
     <VStack spacing={6} alignItems={"flex-start"}>
       <Heading as="h3" size="md" id={anchorFromTitle(functionName)} marginTop={12}>
-        <Code colorScheme="green">{title}</Code>
+        <Code colorScheme="yellow">{title}</Code>
       </Heading>
       <Text>{description}</Text>
       <VStack spacing={4} alignItems={"flex-start"}>
@@ -46,7 +46,7 @@ export const Feature = ({
           {props.map((prop: any) => (
             <ListItem key={prop.name} marginBottom={4}>
               <Code>{prop.name}</Code> :{" "}
-              <Code colorScheme="green">{prop.type}</Code> - {prop.description}
+              <Code colorScheme="yellow">{prop.type}</Code> - {prop.description}
             </ListItem>
           ))}
         </UnorderedList>
