@@ -31,8 +31,9 @@ export default function Homepage() {
           </Button>
         </Flex>
       </PageHeader>
-      <VStack marginTop={8} justifyContent={"center"} spacing={4}>
-				<Heading as="h2" marginBottom={4}>Quick demo</Heading>
+      <VStack marginTop={8} justifyContent={"center"} spacing={6}>
+				<Heading as="h2">Quick demo</Heading>
+				<Text maxW={"lg"} marginBottom={4}>Check your browser tab. View docs for more demos / examples.</Text>
         <Flex gap={4} justifyContent={"center"} wrap={"wrap"}>
           <Button
             onClick={() => swapFavicon({ favicon: "🎉" })}
