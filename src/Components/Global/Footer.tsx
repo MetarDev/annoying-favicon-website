@@ -1,4 +1,4 @@
-import { Box, Container, useColorModeValue } from "@chakra-ui/react";
+import { Box, Container, Link, useColorModeValue } from "@chakra-ui/react";
 
 export const Footer = () => {
 	return (
@@ -15,6 +15,7 @@ export const Footer = () => {
 					lg: "content_horizontal_spacing_lg",
 				}}
 			>
+				<Link href="https://github.com/MetarDev/tabky-js/blob/main/CHANGELOG.md" isExternal color="brandTextLight">Changelog</Link>
 			</Container>
 		</footer>
 	);
